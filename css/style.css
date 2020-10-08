@@ -1,0 +1,27 @@
+/*Ovo*/
+@font-face {
+    font-family: 'Ovo';
+    src: url(./fonts/Ovo/Ovo-Regular.ttf) format('truetype');
+    font-weight: 700;
+}
+
+/*Mulish*/
+@font-face {
+    font-family: 'Muli';
+    src: url(./fonts/Muli/Muli-Regular.ttf) format('truetype');
+    font-weight: 200;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.mdl-layout-title {
+    font-family: 'Ovo', serif;
+}
+
+p {
+    font-family: 'Muli', sans-serif;
+}
