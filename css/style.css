@@ -12,16 +12,17 @@
     font-weight: 200;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.mdl-layout-title {
+/*
+- Branco: #fbfbfb
+- Amarelo: #fff1c1
+- Verde: #78b7bb
+- Preto: #808b97
+*/
+
+.ovo{
     font-family: 'Ovo', serif;
 }
 
-p {
+.muli {
     font-family: 'Muli', sans-serif;
 }
