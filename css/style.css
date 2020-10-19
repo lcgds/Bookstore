@@ -19,10 +19,18 @@
 - Preto: #808b97
 */
 
+nav {
+    background-color: #fff1c1!important;
+}
+
 .ovo{
     font-family: 'Ovo', serif;
 }
 
 .muli {
     font-family: 'Muli', sans-serif;
+}
+
+svg {
+    color: #78b7bb;
 }
