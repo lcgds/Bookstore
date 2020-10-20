@@ -2,14 +2,14 @@
 @font-face {
     font-family: 'Ovo';
     src: url(./fonts/Ovo/Ovo-Regular.ttf) format('truetype');
-    font-weight: 700;
+    font-weight: 700!important;
 }
 
 /*Mulish*/
 @font-face {
     font-family: 'Muli';
     src: url(./fonts/Muli/Muli-Regular.ttf) format('truetype');
-    font-weight: 200;
+    font-weight: 200!important;
 }
 
 /*
