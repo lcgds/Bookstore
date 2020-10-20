@@ -23,11 +23,14 @@ nav {
     background-color: #fff1c1!important;
 }
 
-.ovo{
+.ovo,
+.navbar-brand,
+h2 {
     font-family: 'Ovo', serif;
 }
 
-.muli {
+.muli,
+body {
     font-family: 'Muli', sans-serif;
 }
 
