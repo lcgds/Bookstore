@@ -35,7 +35,7 @@
             <a class="navbar-brand" href="./home.php">
                 <img src="../img/icon.png" width="30" height="30" class="d-inline-block align-top" alt=""
                     loading="lazy">
-                TSI Bookstore
+                Biblioteca TSI
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -46,9 +46,6 @@
                 <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="./home.php">Página Inicial</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./produtos.php">Produtos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./login.php">Login</a>
@@ -157,7 +154,7 @@
     </main>
 
     <footer class="container-fluid fixed-bottom pt-3 pb-3 bg-dark text-light">
-        <span>© TSI Bookstore 2020
+        <span>© Biblioteca TSI 2020
         </span>
     </footer>
 
