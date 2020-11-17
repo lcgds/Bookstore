@@ -7,12 +7,8 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--Aba do navegador-->
     <title>Index</title>
-    
+
     <?php require_once './require/head_links.php';?>
 
 </head>
@@ -43,77 +39,79 @@
     </div>
 
     <main class="container">
-        <h2 class="my-4">Recomendações</h2>
-        <div class="row">
+        <h2 class="mt-5 mb-3">Recomendações</h2>
+        <div class="row books">
+
             <div class="col">
-                1
+                <img class="img-fluid" src="../img/book3.jpg">
+                <h3 class="h5 text-center mt-2">1984</h3>
             </div>
+
             <div class="col">
-                2
+                <img class="img-fluid" src="../img/book4.jpg">
+                <h3 class="h5 text-center mt-2">Laranja Mecânica</h3>
             </div>
+
+            <div class="col">
+                <img class="img-fluid" src="../img/book5.jpg">
+                <h3 class="h5 text-center mt-2">It: A Coisa</h3>
+            </div>
+
         </div>
 
-        <h2 class="my-4">Mais populares</h2>
-        <div class="row">
+        <h2 class="mt-5 mb-3">Destaques</h2>
+        <div class="row books">
+
             <div class="col">
-                1
+                <img class="img-fluid" src="../img/book1.jpg">
+                <h3 class="h5 text-center mt-2">Harry Potter e a pedra filosofal</h3>
             </div>
+
             <div class="col">
-                2
+                <img class="img-fluid" src="../img/book2.jpg">
+                <h3 class="h5 text-center mt-2">O Senhor dos Anéis: A Sociedade do Anel</h3>
             </div>
-            <div class="col">
-                3
-            </div>
-            <div class="col">
-                4
-            </div>
+
         </div>
 
-        <h2 class="my-4">Novidades</h2>
-        <div class="row">
+        <h2 class="mt-5 mb-3">Autores</h2>
+        <div class="row authors">
+
             <div class="col">
-                1
+                <img class="img-fluid rounded-circle" src="../img/author4.jpg">
+                <h3 class="h5 text-center mt-2">Agatha Christie</h3>
             </div>
+
             <div class="col">
-                2
+                <img class="img-fluid rounded-circle" src="../img/author2.jpg">
+                <h3 class="h5 text-center mt-2">George R. R. Martin</h3>
             </div>
+
+            <div class="col">
+                <img class="img-fluid rounded-circle" src="../img/author1.jpg">
+                <h3 class="h5 text-center mt-2">J. R. R. Tolkien</h3>
+            </div>
+
+            <div class="col">
+                <img class="img-fluid rounded-circle" src="../img/author3.jpg">
+                <h3 class="h5 text-center mt-2">Stephen King</h3>
+            </div>
+
+
         </div>
 
-        <h2 class="my-4">Autores</h2>
-        <div class="row">
-            <div class="col">
-                1
-            </div>
-            <div class="col">
-                2
-            </div>
-            <div class="col">
-                3
-            </div>
-            <div class="col">
-                4
-            </div>
-        </div>
-
-        <h2 class="my-4">Sagas</h2>
-        <div class="row">
-            <div class="col">
-                1
-            </div>
-            <div class="col">
-                2
-            </div>
-        </div>
-
-        <h2 class="my-4">Gêneros</h2>
-        <div class="row">
-            <div class="col">
-                1
-            </div>
-            <div class="col">
-                2
-            </div>
-        </div>
+        <h2 class="mt-5 mb-3">Gêneros</h2>
+        <ul class="genre list-unstyled">
+            <li>Biografia</li>
+            <li>Conto</li>
+            <li>Fantasia</li>
+            <li>Ficção Científica</li>
+            <li>Horror</li>
+            <li>Negócios</li>
+            <li>Poesia</li>
+            <li>Romance</li>
+            <li>Suspense</li>
+        </ul>
 
     </main>
 

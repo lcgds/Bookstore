@@ -4,6 +4,7 @@
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
+        <!--Favicon-->
         <link rel='icon' href='../img/icon.png'>
 
         <!--Bootstrap-->
@@ -15,10 +16,12 @@
         <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js'
             integrity='sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx'
             crossorigin='anonymous'></script>
-
-        <!--CSS e JavaScript-->
-        <link rel='stylesheet' href='../css/style.css'>
+        
+        <!--JavaScript-->
         <script src='../javascript/script.js'></script>
+        
+        <!--CSS-->
+        <link rel='stylesheet' href='../css/styles.css'>
     ";
 
 ?>
