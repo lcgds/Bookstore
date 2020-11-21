@@ -21,7 +21,7 @@
         <script src='../javascript/script.js'></script>
         
         <!--CSS-->
-        <link rel='stylesheet' href='../css/styles.css'>
+        <link rel='stylesheet' href='../css/styles-a.css'>
     ";
 
 ?>

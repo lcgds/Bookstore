@@ -36,7 +36,7 @@
                 <input type="password" class="form-control" id="loginSenha" required>
             </div>
             <p><a href="#">Esqueceu a senha?</a></p>
-            <p><a href="./cadastro.php">Não tem cadastro?</a></p>
+            <p><a href="./cadastro-usuario.php">Não tem cadastro?</a></p>
             <button type="button" class="btn btn-primary">ENTRAR</button>
         </form>
 
