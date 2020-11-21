@@ -37,14 +37,7 @@ h3 {
     color: #217ca7;
 }
 
-.card {
-    background-color: red !important;
-}
-
-.card-img {
-    max-height: 650px !important;
-}
-
+/*Home.php*/
 .authors img {
     filter: grayscale(100%);
 }
@@ -67,4 +60,9 @@ h3 {
 .genre li:hover {
     transition: 0.3s;
     background-color: #fff1c1 !important;
+}
+
+/*Index.php*/
+.card-img {
+    max-height: 430px !important;
 }
