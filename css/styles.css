@@ -19,20 +19,30 @@
 
 .ovo,
 .navbar-brand,
-h2 {
+h2,
+h3 {
     font-family: 'Ovo', serif;
-    font-weight: 700!important;
+    font-weight: 700 !important;
 }
 
 .muli,
 body {
     font-family: 'Muli', sans-serif;
-    font-weight: 200!important;
+    font-weight: 200 !important;
 }
 
-main h2 ,
-svg {
+svg,
+h2,
+h3 {
     color: #217ca7;
+}
+
+.card {
+    background-color: red !important;
+}
+
+.card-img {
+    max-height: 650px !important;
 }
 
 .authors img {
@@ -56,5 +66,5 @@ svg {
 
 .genre li:hover {
     transition: 0.3s;
-    background-color: #fff1c1!important;
+    background-color: #fff1c1 !important;
 }
