@@ -23,7 +23,7 @@
             <div class="row no-gutters">
 
                 <div class="col">
-                    <img class="card-img" src="../img/shunya-koide-1emWndlDHs0-unsplash.jpg"  style="max-height: 430px;">
+                    <img class="card-img" src="../img/shunya-koide-1emWndlDHs0-unsplash.jpg">
                 </div>
                 <div class="col-7">
                     <div class="card-body">
