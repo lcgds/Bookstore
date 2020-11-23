@@ -20,7 +20,7 @@
         <main class="container my-5">
             
         <div class="card bg-light text-center">
-            <img class="card-img-top" src="../img/gabriel-sollmann-Y7d265_7i08-unsplash.jpg">
+            <img class="card-img-top" src="./img/gabriel-sollmann-Y7d265_7i08-unsplash.jpg">
             <div class="card-body">
                 <h2 class="card-title">Sobre nós</h2>
                 <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem ullam iste aperiam molestias sint obcaecati aliquid quam quidem quaerat quisquam ratione, nulla ipsam, a libero deserunt natus. Molestiae, soluta cupiditate!</p>

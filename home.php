@@ -43,17 +43,17 @@
         <div class="row books">
 
             <div class="col">
-                <img class="img-fluid" src="../img/book3.jpg">
+                <img class="img-fluid" src="./img/book3.jpg">
                 <h3 class="h5 text-center mt-2">1984</h3>
             </div>
 
             <div class="col">
-                <img class="img-fluid" src="../img/book4.jpg">
+                <img class="img-fluid" src="./img/book4.jpg">
                 <h3 class="h5 text-center mt-2">Laranja Mecânica</h3>
             </div>
 
             <div class="col">
-                <img class="img-fluid" src="../img/book5.jpg">
+                <img class="img-fluid" src="./img/book5.jpg">
                 <h3 class="h5 text-center mt-2">It: A Coisa</h3>
             </div>
 
@@ -63,12 +63,12 @@
         <div class="row books">
 
             <div class="col">
-                <img class="img-fluid" src="../img/book1.jpg">
+                <img class="img-fluid" src="./img/book1.jpg">
                 <h3 class="h5 text-center mt-2">Harry Potter e a pedra filosofal</h3>
             </div>
 
             <div class="col">
-                <img class="img-fluid" src="../img/book2.jpg">
+                <img class="img-fluid" src="./img/book2.jpg">
                 <h3 class="h5 text-center mt-2">O Senhor dos Anéis: A Sociedade do Anel</h3>
             </div>
 
@@ -78,22 +78,22 @@
         <div class="row authors">
 
             <div class="col">
-                <img class="img-fluid rounded-circle" src="../img/author4.jpg">
+                <img class="img-fluid rounded-circle" src="./img/author4.jpg">
                 <h3 class="h5 text-center mt-2">Agatha Christie</h3>
             </div>
 
             <div class="col">
-                <img class="img-fluid rounded-circle" src="../img/author2.jpg">
+                <img class="img-fluid rounded-circle" src="./img/author2.jpg">
                 <h3 class="h5 text-center mt-2">George R. R. Martin</h3>
             </div>
 
             <div class="col">
-                <img class="img-fluid rounded-circle" src="../img/author1.jpg">
+                <img class="img-fluid rounded-circle" src="./img/author1.jpg">
                 <h3 class="h5 text-center mt-2">J. R. R. Tolkien</h3>
             </div>
 
             <div class="col">
-                <img class="img-fluid rounded-circle" src="../img/author3.jpg">
+                <img class="img-fluid rounded-circle" src="./img/author3.jpg">
                 <h3 class="h5 text-center mt-2">Stephen King</h3>
             </div>
 

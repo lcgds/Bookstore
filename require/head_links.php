@@ -5,7 +5,7 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
         <!--Favicon-->
-        <link rel='icon' href='../img/icon.png'>
+        <link rel='icon' href='./img/icon.png'>
 
         <!--Bootstrap-->
         <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css'
@@ -18,10 +18,10 @@
             crossorigin='anonymous'></script>
         
         <!--JavaScript-->
-        <script src='../javascript/script.js'></script>
+        <script src='./javascript/script.js'></script>
         
         <!--CSS-->
-        <link rel='stylesheet' href='../css/styles-a.css'>
+        <link rel='stylesheet' href='./css/style.css'>
     ";
 
 ?>

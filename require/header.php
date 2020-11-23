@@ -6,7 +6,7 @@ echo "
         <nav class='navbar navbar-expand-lg navbar-dark bg-dark sticky-top'>
 
             <a class='navbar-brand' href='./home.php'>
-                <img src='../img/icon.png' width='30' height='30' class='d-inline-block align-top' alt='' loading='lazy'>
+                <img src='./img/icon.png' width='30' height='30' class='d-inline-block align-top' alt='' loading='lazy'>
                 Biblioteca TSI
             </a>
 

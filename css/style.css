@@ -17,6 +17,10 @@
 - Preto: #808b97
 */
 
+.navbar-toggler {
+    outline: none !important;
+}
+
 .ovo,
 .navbar-brand,
 h2,
