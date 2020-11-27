@@ -41,7 +41,7 @@ function ja_existe_email(string $email): bool//cria function com paramentro de u
 	global $db; //para conseguir acessar fora desse código e neste cod
 
 	//1) preparo a consulta e faço ela de forma segura
-	$stmt = $db->prepare('SELECT id FROM usuario WHERE email = :email');
+	$stmt = $db->prepare('SELECT id FROM usuario WHERE Email = :email');
 
 	//2)Acima Coloca :email como valor para tratar e depois aqui no 2) ele trata e coloca em $email dnv;
 	$stmt->bindParam(':email', $email);
@@ -104,7 +104,8 @@ function apagar_usuario( int $id ): bool
 }
 
 
-function editar_usuario(int $id, string $nome, string $CPF, string $email, string $senha, string $endereco, string $telefone ): bool//?int pode voltar um inteiro um false ou null, ou seja, ñ vai ser necessariamente um inteiro,peço integer mas pode vir null ou false.
+function editar_usuario(int $id, string $nome, string $CPF, string $email, 
+						string $senha, string $endereco, string $telefone): bool//?int pode voltar um inteiro um false ou null, ou seja, ñ vai ser necessariamente um inteiro,peço integer mas pode vir null ou false.
 {
 
 	global $db;

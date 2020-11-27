@@ -23,23 +23,23 @@ if( isset($_POST['gravar'])){
 	require 'controller/consistencia_cadastro.php';
 
 	
-	if ( count($erros) == 0 ) {
+	if ( count($erros) == 0) {
 
-		if ( !editar_usuario( $_POST['id'], $_POST['nome'], $_POST['senha'], $_POST['email'], $_POST['senha'], $_POST['senha'],$_POST['senha']) ) {
-			
-			$erros = ['Erro ao tentar editar o usuário!'];
-
+		if ( 	editar_usuario( $_POST['ID'], $_POST['Nome'], $_POST['CPF'], $_POST['Email'],
+								$_POST['Senha'], $_POST['Endereco'],$_POST['Telefone'])){		
+			echo 'usuario editado com sucesso';																
+			// $erros = ['Erro ao tentar editar o usuário!'];
 		} else {
-
-			$editado_ok = true;
+			echo 'Não foi possível editar o usuario';																
+			// $editado_ok = true;
 		}
 	}
 
-	require '../header_tpl.php';
-	require '../index_menu_tpl.php';
+	require '../require/head_links.php';
+	require '../require/header.php';
 	require 'view/editar.php';
-	require '../footer_tpl.php';
-
+	require '../require/footer.php';
+	
 	exit();
 
 }
@@ -48,20 +48,20 @@ if( isset( $_GET['editar'] )){
 
 	$usuario = listarTudo($_GET['editar']) ?? [];
 
-	$nome = $usuario[0]['nome'] ?? '';
-	$email = $usuario[0]['email'] ?? '';
-	$email = $usuario[0]['email'] ?? '';
-	$email = $usuario[0]['email'] ?? '';
-	$email = $usuario[0]['email'] ?? '';
+	$nome 	  =	$usuario[0]['Nome'] ?? '';
+	$CPF 	  =	$usuario[0]['CPF'] ?? '';
+	$email 	  =	$usuario[0]['Email'] ?? '';
+	$senha 	  =	$usuario[0]['Senha'] ?? '';
+	$endereco = $usuario[0]['Endereco'] ?? '';
+	$telefone = $usuario[0]['Telefone'] ?? '';
 
-	require '../header_tpl.php';
-	require '../index_menu_tpl.php';
+	require '../require/head_links.php';
+	require '../require/header.php';
 	require 'view/editar.php';
-	require '../footer_tpl.php';
+	require '../require/footer.php';
 
 	exit();//para de rodar o código
 }
-
 
 $lista = listarTudo();
 require 'view/lista.php';

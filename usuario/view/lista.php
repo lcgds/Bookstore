@@ -2,11 +2,11 @@
 <html lang="pt-BR">
 <head>
     <title>Lista</title>
-    <?php require_once '.././require/head_links.php'; ?>
+    <?php require '.././require/head_links.php'; ?>
 </head>
 
 <body>
-    <?php require_once '.././require/header.php'; ?>
+    <?php require '.././require/header.php'; ?>
 
     <main class="container">
         <div class="text-center">    
@@ -51,6 +51,6 @@
             </table>
         </div>
     </main>
-        <?php include '.././require/footer.php'; ?>
+        <?php require '.././require/footer.php'; ?>
     </body>
 </html>

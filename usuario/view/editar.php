@@ -2,18 +2,14 @@
 <html lang="pt-BR">
 <head>
     <title>Editar</title>
-    <?php require_once '../../require/head_links.php'; ?>
+    <?php require '.././require/head_links.php'; ?>
 </head>
 
 <body>
-    <?php require_once '../../require/header.php'; ?>
-
     <main class="container">
         <div class="text-center">
-
         <h1 class="container pt-sm-4">EDITAR USUÁRIO :-)</h1>
-
-        <form method="post" action="">
+        <form method="post">
         <div class="text-success">
         <?php
             if ( isset($editado_ok) ) {
@@ -32,31 +28,49 @@
             }
             ?>
         </div>
-        <br>
         <div class="form-row">
+        
             <div class="form-group col-md-6">
-            <label for="inputNome">Nome Completo</label>
-            <input type="text" class="form-control" id="inputNome" placeholder="Seu Nome..." name="nome" value="<?php echo $nome; ?>" required>
+                <label for="inputNome">Nome</label>
+                <input type="text" class="form-control" id="inputNome" placeholder="Seu Nome..." name="Nome" value="<?php echo $nome; ?>" required>
             </div>
-        <div class="form-group col-md-6">
-            <label for="inputEmail">Email</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="email" value="<?php echo $email; ?>"required>
-        </div>
-        <div class="form-group col-md-6">
-            <label for="inputSenha">Senha</label>
-            <input type="password" class="form-control" id="inputSenha" placeholder="Senha" name="senha" value="****" required>
-        </div>
-        <div class="form-group col-md-6">
-            <label for="conf_senha">Confirme a senha</label>
-            <input type="password" class="form-control" id="conf_senha" placeholder="Confirme sua senha" name="conf_senha" value="****" required>
-        </div>
-        </div>
+            
+            <div class="form-group col-md-6">
+                <label for="inputCPF">CPF</label>
+                <input type="text" class="form-control" id="inputCPF" placeholder="12334567810" name="CPF" value="<?php echo $CPF; ?>" required>
+            </div>        
+            
+            <div class="form-group col-md-6">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" name="Email" value="<?php echo $email; ?>"required>
+            </div>
+            
+            <div class="form-group col-md-6">
+                <label for="inputEndereco">Endereço</label>
+                <input type="text" class="form-control" id="inputEndereco" placeholder="Rua dos Bobos, 0" name="Endereco" value="<?php echo $endereco; ?>" required>
+            </div>
 
-            <input type="hidden" name="id" value="<?php echo $_GET['editar']; ?>">
+            <div class="form-group col-md-6">
+                <label for="inputSenha">Senha</label>
+                <input type="password" class="form-control" id="inputSenha" placeholder="Senha" name="Senha" value="****" required>
+            </div>
+            
+            <div class="form-group col-md-6">
+                <label for="conf_senha">Confirme a senha</label>
+                <input type="password" class="form-control" id="conf_senha" placeholder="Confirme sua senha" name="conf_senha" value="****" required>
+            </div>
+            
+            <div class="form-group col-md-6">
+                <label for="inputTelefone">Telefone</label>
+                <input type="text" class="form-control" id="inputTelefone" placeholder="11987654321" name="Telefone" value="<?php echo $telefone; ?>" required>
+            </div>
+            
+        </div>
+            <input type="hidden" name="ID" value="<?php echo $_GET['editar']; ?>">
             <input type='submit' class='btn btn-outline-dark' name='gravar' value='Gravar'>
         </form>
         </div>
     </main>
-    <?php include '../../require/footer.php'; ?>
+    <?php require '.././require/head_links.php'; ?>
 </body>
 </html>
