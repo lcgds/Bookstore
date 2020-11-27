@@ -25,7 +25,7 @@ if( isset($_POST['gravar'])){
 	
 	if ( count($erros) == 0 ) {
 
-		if ( !editar_usuario( $_POST['id'], $_POST['nome'], $_POST['email'], $_POST['senha']) ) {
+		if ( !editar_usuario( $_POST['id'], $_POST['nome'], $_POST['senha'], $_POST['email'], $_POST['senha'], $_POST['senha'],$_POST['senha']) ) {
 			
 			$erros = ['Erro ao tentar editar o usuário!'];
 
