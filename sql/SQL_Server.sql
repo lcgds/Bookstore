@@ -1,7 +1,10 @@
 CREATE DATABASE LivrariaTSI;
 
+<<<<<<< HEAD
 USE LivrariaTSI;
 
+=======
+>>>>>>> renan
 CREATE TABLE Usuario (
     ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
     Nome VARCHAR(255) NOT NULL,
