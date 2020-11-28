@@ -22,7 +22,7 @@
                 </svg>
                 Cadastro
             </h2>
-            <form>
+            <form method="post">
                 <div class="form-group">
                     <label for="cadastroNome">Nome</label>
                     <input type="text" class="form-control" id="cadastroNome" required autofocus>
@@ -30,6 +30,10 @@
                 <div class="form-group">
                     <label for="cadastroCPF">CPF</label>
                     <input type="text" class="form-control" id="cadastroCPF" required>
+                </div>
+                <div class="form-group">
+                    <label for="cadastroEmail">E-mail</label>
+                    <input type="email" class="form-control" id="cadastroEmail" required>
                 </div>
                 <div class="form-group">
                     <label for="cadastroEmail">E-mail</label>
