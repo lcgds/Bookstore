@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
-        <title>Index</title>    
+        <title>Biblioteca TSI</title>    
         <?php require_once '../../require/head_links.php';?>
     </head>
     <body>
@@ -14,7 +14,8 @@
                 Cadastro
             </h2>
             <form method="post" action="../cadastro.php">
-            <!-- <div class="text-danger">
+            <!--
+                <div class="text-danger">
                 <?php 
                     // if(count($erros) > 0){//conta quantos indices tem num vetor, ou seja se for 0, não tem mensagem, se for 1 ou mais ja tem, e como pode ter + q 1 fazemos um foreach para criar um looping que exibe todos
                     //     foreach ($erros as $erro) { 
@@ -22,7 +23,7 @@
                     //     }
                     // } 
                 ?>
-            </div> -->
+            </div>-->
                 <div class="form-group">
                     <label for="cadastroNome">Nome</label>
                     <input type="text" name="cadastroNome" class="form-control" id="cadastroNome" required autofocus>

@@ -19,56 +19,81 @@
                     Minha conta
             </h2>
 
-            <ul class="nav nav-pills justify-content-center" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a id="dados-tab" class="nav-link active" data-toogle="pill" href="#dados" role="tab" aria-controls="dados" aria-selected="true">Dados</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a id="emprestimos-tab" class="nav-link" data-toogle="pill" href="#emprestimos" role="tab" aria-controls="emprestimos" aria-selected="false">Empréstimos</a>
-                </li>
-            </ul>
+            <!--
+                - Nome VARCHAR(255) NOT NULL,
+                - CPF INT NOT NULL,
+                - DataNascimento DATE NOT NULL,
+                - Sexo VARCHAR(255),
 
-            <div class="tab-content">
+                Endereco VARCHAR(255) NOT NULL,
+                CEP INT NOT NULL,
+                Cidade VARCHAR(255) NOT NULL,
+                UF VARCHAR(255) NOT NULL,
 
-                <!--Dados-->
-                <form id="dados" class="tab-pane fade show active" role="tabpanel" aria-labelledby="dados-tab">
-                    <div class="form-group">
-                        <label for="cadastroNome">Nome</label>
-                        <input type="text" class="form-control" id="cadastroNome" required autofocus>
-                    </div>
-                    <div class="form-group">
-                        <label for="cadastroCPF">CPF</label>
-                        <input type="text" class="form-control" id="cadastroCPF" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cadastroEmail">E-mail</label>
-                        <input type="email" class="form-control" id="cadastroEmail" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cadastroSenha">Senha</label>
-                        <input type="password" class="form-control" id="cadastroSenha" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cadastroRepeticaoSenha">Repetir senha</label>
-                        <input type="password" class="form-control" id="cadastroRepeticaoSenha" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cadastroEndereco">Endereço</label>
-                        <input type="password" class="form-control" id="cadastroEndereco" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="cadastroTelefone">Telefone</label>
-                        <input type="password" class="form-control" id="cadastroTelefone" required>
-                    </div>
-                    <button type="button" class="btn btn-primary">CADASTRAR</button>
-                </form>
+                Telefone INT NOT NULL,
+                Email VARCHAR(255) NOT NULL,
+                Senha VARCHAR(255) NOT NULL
+            -->
 
-                <!--Empréstimos-->
-                <div id="emprestimos" class="tab-pane fade" role="tabpanel" aria-labelledby="emprestimos-tab">
-                    <img src="http://via.placeholder.com/500x500">
-                </div>
+            <form id="dados">
+                <fieldset disabled>
+
+                    <div class="form-row">
+                        <div class="form-group col-7">
+                            <label for="usuarioNome">Nome</label>
+                            <input type="text" class="form-control" id="usuarioNome" required autofocus>
+                        </div>
+
+                        <div class="form-group col-5">
+                            <label for="usuarioCPF">CPF</label>
+                            <input type="text" class="form-control" id="usuarioCPF" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label for="usuarioDataNascimento">Data de nascimento</label>
+                            <input type="date" class="form-control" id="usuarioDataNascimento" required>
+                        </div>
+
+                        <div class="form-group col">
+                            <label class="d-block" for="usuarioSexo">Sexo</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="usuarioSexoF" value="Feminino">
+                                <label class="form-check-label" for="usuarioSexoF">Feminino</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="usuarioSexoM" value="Masculino">
+                                <label class="form-check-label" for="usuarioSexoM">Masculino</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="usuarioEndereco">Endereço</label>
+                        <input type="password" class="form-control" id="usuarioEndereco" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="usuarioTelefone">Telefone</label>
+                        <input type="password" class="form-control" id="usuarioTelefone" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="usuarioEmail">E-mail</label>
+                        <input type="email" class="form-control" id="usuarioEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="usuarioSenha">Senha</label>
+                        <input type="password" class="form-control" id="usuarioSenha" required>
+                    </div>
                 
-            </div>
+                    
+                </fieldset>
+
+                <button type="button" class="btn btn-primary">ATUALIZAR</button>
+            </form>
+
         </main>
 
         <?php require_once './require/footer.php';?>

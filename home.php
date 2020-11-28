@@ -7,7 +7,7 @@
 
 <head>
 
-    <title>Index</title>
+    <title>Biblioteca TSI</title>
 
     <?php require_once './require/head_links.php';?>
 
