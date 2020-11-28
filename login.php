@@ -1,23 +1,8 @@
-<<<<<<< HEAD
-<?php
-
-?>
-
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <title>Login</title>
-    
-    <?php require_once './require/head_links.php';?>
-
-=======
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <title>Login</title>
     <?php require_once './require/head_links.php'; ?>
->>>>>>> renan
 </head>
 
 <body>
@@ -44,13 +29,8 @@
                 <input type="password" class="form-control" id="loginSenha" required>
             </div>
             <p><a href="#">Esqueceu a senha?</a></p>
-<<<<<<< HEAD
-            <p><a href="./cadastro-usuario.php">Não tem cadastro?</a></p>
-            <button type="button" class="btn btn-primary">ENTRAR</button>
-=======
             <p><a href="/library-wip/usuario/view/cadastro-usuario_tpl.php">Não tem cadastro?</a></p>
             <input type="submit" class="btn btn-primary" name="entrar" value="ENTRAR">
->>>>>>> renan
         </form>
 
     </main>
