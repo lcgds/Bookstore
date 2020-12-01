@@ -1,12 +1,12 @@
 <?php
 
-$nome = $_POST['Nome'] ?? null;
+$nome = $_POST['nome'] ?? null;
 $CPF = $_POST['CPF'] ?? null;
-$email = $_POST['Email'] ?? null;
-$senha = $_POST['Senha'] ?? null;
+$email = $_POST['email'] ?? null;
+$senha = $_POST['senha'] ?? null;
 $conf_senha = $_POST['conf_senha'] ?? null;
-$endereco = $_POST['Endereco'] ?? null;
-$telefone = $_POST['Telefone'] ?? null;
+$endereco = $_POST['endereco'] ?? null;
+$telefone = $_POST['telefone'] ?? null;
 
 $senha = trim($senha);
 $email = strtolower( $email );//trata o e-mail - fica tudo minúsculo
@@ -32,10 +32,6 @@ if ( !filter_var( $email, FILTER_VALIDATE_EMAIL) ) {
 
 //faz o desvio do momento do cadastro e da edição com: && !isset($_POST['gravar'])
 } 
-elseif ( ja_existe_email($email) && !isset($_POST['gravar']) ) {
-
-	$erros[] = 'E-mail já cadastrado';
-}
 
 //Verifica se a senha tem no mínimo 8 caracteres
 if ( strlen($senha) < 8 ) {
@@ -48,7 +44,7 @@ if ( strlen($senha) < 8 ) {
 	$erros[] = 'A confirmação da senha não é válida';
 }
 
-if ( !filter_input(INPUT_POST,'Telefone', FILTER_VALIDATE_INT) ) {
+if ( !filter_input(INPUT_POST,'telefone', FILTER_VALIDATE_INT) ) {
 
 	$erros[] = 'Coloque apenas números no Telefone!';
 }

@@ -18,18 +18,18 @@
             </svg>
             Login
         </h2>
-
-        <form>
+        <div class="text-danger"><?php if (isset($msg)) echo $msg ?></div>
+        <form method="post" action="index.php">
             <div class="form-group">
                 <label for="loginEmail">E-mail</label>
-                <input type="email" class="form-control" id="loginEmail" autofocus required>
+                <input type="email" class="form-control" name="login" id="loginEmail" autofocus required>
             </div>
             <div class="form-group">
                 <label for="loginSenha">Senha</label>
-                <input type="password" class="form-control" id="loginSenha" required>
+                <input type="password" class="form-control" name="senha" id="loginSenha" required>
             </div>
             <p><a href="#">Esqueceu a senha?</a></p>
-            <p><a href="/library-wip/usuario/view/cadastro-usuario_tpl.php">Não tem cadastro?</a></p>
+            <p><a href="cadastro-usuario_tpl.php">Não tem cadastro?</a></p>
             <input type="submit" class="btn btn-primary" name="entrar" value="ENTRAR">
         </form>
 

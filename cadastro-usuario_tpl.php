@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
     <head>
-        <title>Index</title>
-        
-        <?php   require './require/head_links.php';
-                require 'sessao.php';
-        ?>
+        <title>Index</title>    
+        <?php require './require/head_links.php';?>
     </head>
-
     <body>
-
         <?php require './require/header.php';?>
-
         <main class="container my-5">
             <h2 class="mb-3">
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-gear-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"/>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"/>
                 </svg>
-                    Minha conta
+                Cadastro
             </h2>
 
-            
-
-                <!--Dados-->
-                <form method="post" id="dados" class="tab-pane fade show active" role="tabpanel" aria-labelledby="dados-tab">
-                <fieldset disabled>
-                <?php
-                    if(isset($msg)) echo $msg;
+        <form method="post" action="cadastro.php">
+            <div class="text-danger">
+                <?php 
+                    $erros = [];
+                    if(count($erros) > 0){//conta quantos indices tem num vetor, ou seja se for 0, não tem mensagem, se for 1 ou mais ja tem, e como pode ter + q 1 fazemos um foreach para criar um looping que exibe todos
+                        foreach ($erros as $erro) { 
+                            echo $erro.''; 
+                        }
+                    }
                 ?>
-                <input type="hidden" value="" name="ID">
+            <div class="text-success"> <?php if(isset($msg)){ echo $msg;} ?> </div>
+            </div>
                     
                 <div class="form-row">
                     <div class="form-group col-7">
@@ -41,12 +37,13 @@
                         <input type="text" value="" name="CPF" class="form-control" id="CPF" required>
                     </div>
                 </div>    
-                <div class="form-row">
+                    <div class="form-row">
                         <div class="form-group col">
-                            <label for="usuarioDataNascimento">Data de nascimento</label>
-                            <input type="date" class="form-control" id="usuarioDataNascimento" required>
+                            <label for="dataNasc">Data de nascimento</label>
+                            <input type="date" name="dataNasc" class="form-control" id="dataNasc" required>
                         </div>
-                        <div class="form-group col">
+
+                    <div class="form-group col">
                           <label class="mr-sm-2" for="Sexo">Sexo</label>
                           <select class="custom-select mr-sm-2" name="sexo" id="Sexo">
                             <option selected>Escolha...</option>
@@ -54,7 +51,7 @@
                             <option value="Feminino">Feminino</option>
                             <option value="Prefiro não dizer">Prefiro não dizer</option>
                           </select>
-                        </div>
+                    </div>
                     </div>
                     
                     <div class="form-group">
@@ -77,16 +74,9 @@
                         <label for="telefone">Telefone</label>
                         <input type="text" value="" name="telefone" class="form-control" id="telefone" required>
                     </div>
-                    <input type="submit" class="btn btn-primary" name="atualizar" value="ATUALIZAR">
-                </form>
-
-                <!--Empréstimos-->
-              <!--   <div id="emprestimos" class="tab-pane fade" role="tabpanel" aria-labelledby="emprestimos-tab">
-                    <img src="http://via.placeholder.com/500x500">
-                </div> -->
-                
-            </div>
-        </main> 
+                    <input type="submit" name="cadastrar" class="btn btn-primary" value="CADASTRAR">
+            </form>
+        </main>
         <?php require './require/footer.php';?>
     </body>
 </html>

@@ -30,8 +30,11 @@
                     <li class='nav-item'>
                         <a class='nav-link' href='/library-wip/minha-conta_tpl.php'>Minha Conta</a>
                     </li>
+<!--                <li class='nav-item'>
+                        <a class='nav-link' href='./livros.php'>Livros</a>
+                    </li> -->
                     <li class='nav-item'>
-                        <a class='nav-link' href='/library-wip/usuario/'>Usuários</a>
+                        <a class='nav-link' href='/library-wip/lista.php'>Usuários</a>
                     </li>
                     <li class='nav-item'>
                         <a class='nav-link' href='./sair.php'>Sair</a>

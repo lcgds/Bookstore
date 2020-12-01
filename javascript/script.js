@@ -6,12 +6,12 @@ SE (tamanhoY_documento < tamanhoY_tela) {
 }
 */
 
-window.onload = function() {calculaPosicaoFotter()};
-window.onresize = function() {calculaPosicaoFotter()};
+window.onload = function() { calculaPosicaoFotter() };
+window.onresize = function() { calculaPosicaoFotter() };
 
 function calculaPosicaoFotter() {
     let footer = document.getElementById("footer");
-    let documentH = $( document ).height(); //Mudar
+    let documentH = $(document).height(); //Mudar
     let windowH = window.screen.height;
 
     console.log('documentH = ' + documentH);

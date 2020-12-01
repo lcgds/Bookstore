@@ -1,9 +1,3 @@
-<?php
-
-//Biblioteca TSI
-
-?>
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 

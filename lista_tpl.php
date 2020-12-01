@@ -2,21 +2,21 @@
 <html lang="pt-BR">
 <head>
     <title>Lista</title>
-    <?php require '.././require/head_links.php'; ?>
+    <?php require './require/head_links.php'; ?>
 </head>
 
 <body>
-    <?php require '.././require/header.php'; ?>
+    <?php require './require/header.php'; ?>
 
     <main class="container">
         <div class="text-center">    
-            <!-- <div class="text-danger">
+            <div class="text-danger">
             <?php 
-            // if(isset($erro)){
-            //     echo "$erro<br><br>";
-            // }
+            if(isset($erro)){
+                echo "$erro";
+            }
             ?> 
-            </div>        -->
+            </div>
             <table class="table">
                 <thead>
                 <tr>
@@ -51,6 +51,6 @@
             </table>
         </div>
     </main>
-        <?php require '.././require/footer.php'; ?>
+        <?php require './require/footer.php'; ?>
     </body>
 </html>
