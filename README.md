@@ -20,4 +20,4 @@ Cadastrar-se, fazer login e acessar sua conta e editar seus dados, também envia
 
 Para um usuário administrador:
 Além das funções de um usário comum, listagem, alteração e deleção de todas as contas cadastradas.
-Obs. funcionalidades no usuário comum como editar seus dados não finalizada.
+Obs. funcionalidades no usuário comum como editar seus dados não finalizada; funcionalidade de divisão de telas para cada qual tipo de usuário não finalizada.
