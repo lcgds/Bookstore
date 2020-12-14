@@ -13,38 +13,38 @@ $email = strtolower( $email );//trata o e-mail - fica tudo minúsculo
 
 $erros = [];
 
-//Verifica se nome tem dois ou mais caracteres 
-if ( strlen($nome) < 2 ) {
+// //Verifica se nome tem dois ou mais caracteres 
+// if ( strlen($nome) < 2 ) {
 
-	$erros[] = 'O nome tem que ter ao menos dois caracteres';
+// 	$erros[] = 'O nome tem que ter ao menos dois caracteres';
 
-}
+// }
 
-if ( !filter_input(INPUT_POST,'CPF', FILTER_VALIDATE_INT) ) {
+// if ( !filter_input(INPUT_POST,'CPF', FILTER_VALIDATE_INT) ) {
 
-	$erros[] = 'Coloque apenas números no CPF!';
-}
+// 	$erros[] = 'CPF zerado ou coloque apenas números!';
+// }
 
-//Verifica se o e-mail é válido
-if ( !filter_var( $email, FILTER_VALIDATE_EMAIL) ) {
+// //Verifica se o e-mail é válido
+// if ( !filter_var( $email, FILTER_VALIDATE_EMAIL) ) {
 
-	$erros[] = 'E-mail inválido';
+// 	$erros[] = 'E-mail inválido';
 
-//faz o desvio do momento do cadastro e da edição com: && !isset($_POST['gravar'])
-} 
+// //faz o desvio do momento do cadastro e da edição com: && !isset($_POST['gravar'])
+// } 
 
 //Verifica se a senha tem no mínimo 8 caracteres
-if ( strlen($senha) < 8 ) {
+// if ( strlen($senha) < 8 ) {
 
-	$erros[] = 'A senha tem que ter ao menos oito caracteres';
+// 	$erros[] = 'A senha tem que ter ao menos oito caracteres';
 
-//Verifica se a confirmação da senha bate
-} elseif ( $senha != $conf_senha ) {
+// //Verifica se a confirmação da senha bate
+// } elseif ( $senha != $conf_senha ) {
 
-	$erros[] = 'A confirmação da senha não é válida';
-}
+// 	$erros[] = 'A confirmação da senha não é válida';
+// }
 
-if ( !filter_input(INPUT_POST,'telefone', FILTER_VALIDATE_INT) ) {
+// if ( !filter_input(INPUT_POST,'telefone', FILTER_VALIDATE_INT) ) {
 
-	$erros[] = 'Coloque apenas números no Telefone!';
-}
+// 	$erros[] = 'Coloque apenas números no Telefone!';
+// }

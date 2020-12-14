@@ -27,7 +27,7 @@
                             }
                         ?>
                         </div>
-                        <div class="text-danger">
+<!--                         <div class="text-danger">
                         <?php
                         if ( isset($erros) ){
                             if ( count($erros) > 0 ) {    
@@ -37,7 +37,7 @@
                             }
                         }
                         ?>
-                        </div>    
+                        </div> -->    
                         <div class="form-group">
                             <label for="nome">Nome</label>
                             <input type="text" value="<?php echo $nome; ?>" name="nome" class="form-control" id="nome" required autofocus>

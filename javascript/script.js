@@ -26,4 +26,14 @@ function calculaPosicaoFotter() {
             footer.classList.remove("fixed-bottom");
         }
     }
-}
+
+
+// let eventoBotao6  = {
+//     nome: "Thyago",
+//     atribuiFuncaoNoBotao: function() {
+//         document.querySelector("#botao6").addEventListener('click', () => { // arrow function não tem escopo, o escopo dela é o escopo do pai dela , neste caso eu posso acessar uma variavel que está no escopo do pai, então eu posso colocar o this q ela consegue pegar a var. 
+//             alert(this.nome); //Arrow funcion não tem escopo, this = escopo do pai
+//         });// tomar cuidado com onde usar => pq ela pega o escopo do pai.
+//     }
+// }
+// eventoBotao6.atribuiFuncaoNoBotao();

@@ -28,7 +28,7 @@
                         <a class='nav-link' href='/library-wip/sobrenos_tpl.php'>Sobre nós</a>
                     </li>
                     <li class='nav-item'>
-                        <a class='nav-link' href='/library-wip/minha-conta_tpl.php'>Minha Conta</a>
+                        <a class='nav-link' href='/library-wip/meusdados.php'>Minha Conta</a>
                     </li>
 <!--                <li class='nav-item'>
                         <a class='nav-link' href='./livros.php'>Livros</a>

@@ -1,4 +1,4 @@
-<?phpz
+<?php
 
 require 'dados.php';
 
@@ -10,13 +10,14 @@ if(isset($_POST['cadastrar'])){
 							$_POST['email'], $_POST['senha'], $_POST['endereco'], $_POST['telefone'] );
 
 	if( $id ) {//se for false, null, 0, vazio, ele não entra no else;
-
 	session_start();
-
-	$_SESSION['login'] = $_POST['email'];
 	$_SESSION['id'] = $id;
+	
+	$_SESSION['login'] = $_POST['email'];
+	
 
-	header('Location: ../library-wip/sobrenos_tpl.php'); //o header('Location: n/x') redireciona para algum diretório, arquivo. aqui está voltando duas pastas sem arquivo definido, ou seja, o index.
+
+	header('Location: ./sobrenos_tpl.php'); //o header('Location: n/x') redireciona para algum diretório, arquivo. aqui está voltando duas pastas sem arquivo definido, ou seja, o index.
 	
 	}else{
 
@@ -26,9 +27,8 @@ if(isset($_POST['cadastrar'])){
 	
 }else{
 
-    $erros = [];
-    echo 'Não foi possível se cadastrar';    
+    $erros = [];   
 
 }
 
-include './cadastro-usuario_tpl.php';
+include 'cadastro-usuario_tpl.php';

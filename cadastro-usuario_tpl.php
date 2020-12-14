@@ -2,10 +2,10 @@
 <html lang="pt-BR">
     <head>
         <title>Index</title>    
-        <?php require './require/head_links.php';?>
+        <?php require './require/head_links.php'; ?>
     </head>
     <body>
-        <?php require './require/header.php';?>
+        <?php require './require/header.php'; ?>
         <main class="container my-5">
             <h2 class="mb-3">
                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +14,7 @@
                 Cadastro
             </h2>
 
-        <form method="post" action="cadastro.php">
+        <form method="post" action="./cadastro.php">
             <div class="text-danger">
                 <?php 
                     $erros = [];
@@ -30,11 +30,11 @@
                 <div class="form-row">
                     <div class="form-group col-7">
                         <label for="nome">Nome</label>
-                        <input type="text" value="" name="nome" class="form-control" id="nome" required autofocus>
+                        <input type="text" name="nome" class="form-control" id="nome" required autofocus>
                     </div>
                     <div class="form-group col-5">
                         <label for="CPF">CPF</label>
-                        <input type="text" value="" name="CPF" class="form-control" id="CPF" required>
+                        <input type="text" name="CPF" class="form-control" id="CPF" required>
                     </div>
                 </div>    
                     <div class="form-row">
@@ -44,8 +44,8 @@
                         </div>
 
                     <div class="form-group col">
-                          <label class="mr-sm-2" for="Sexo">Sexo</label>
-                          <select class="custom-select mr-sm-2" name="sexo" id="Sexo">
+                          <label class="mr-sm-2" for="sexo">Sexo</label>
+                          <select class="custom-select mr-sm-2" name="sexo" id="sexo">
                             <option selected>Escolha...</option>
                             <option value="Masculino">Masculino</option>
                             <option value="Feminino">Feminino</option>
@@ -56,23 +56,23 @@
                     
                     <div class="form-group">
                         <label for="email">E-mail</label>
-                        <input type="email" value="" name="email" class="form-control" id="email" required>
+                        <input type="email" name="email" class="form-control" id="email" required>
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input type="password" value="" name="senha" class="form-control" id="senha" required>
+                        <input type="password" name="senha" class="form-control" id="senha" required>
                     </div>
                     <div class="form-group">
                         <label for="conf_senha">Repetir senha</label>
-                        <input type="password" value="" name="conf_senha" class="form-control" id="conf_senha" required>
+                        <input type="password" name="conf_senha" class="form-control" id="conf_senha" required>
                     </div>
                     <div class="form-group">
                         <label for="endereco">Endereço</label>
-                        <input type="text" value="" name="endereco" class="form-control" id="endereco" required>
+                        <input type="text" name="endereco" class="form-control" id="endereco" required>
                     </div>
                     <div class="form-group">
                         <label for="telefone">Telefone</label>
-                        <input type="text" value="" name="telefone" class="form-control" id="telefone" required>
+                        <input type="text" name="telefone" class="form-control" id="telefone" required>
                     </div>
                     <input type="submit" name="cadastrar" class="btn btn-primary" value="CADASTRAR">
             </form>

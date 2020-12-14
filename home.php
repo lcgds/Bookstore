@@ -17,13 +17,13 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="http://via.placeholder.com/1600x400" class="mx-auto d-block w-100">
+                <img src="./img/bio-livros.png" class="mx-auto d-block w-100">
             </div>
             <div class="carousel-item">
-                <img src="http://via.placeholder.com/1600x400" class="mx-auto d-block w-100">
+                <img src="./img/harry-potter.jpg" class="mx-auto d-block w-100">
             </div>
             <div class="carousel-item">
-                <img src="http://via.placeholder.com/1600x400" class="mx-auto d-block w-100">
+                <img src="./img/int.jpeg" class="mx-auto d-block w-100">
             </div>
         </div>
     </div>

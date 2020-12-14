@@ -106,4 +106,61 @@ function editar_usuario( int $id, 	string $nome, string $CPF, string $email,
 
 	return $stmt->execute();
 }
+//Funções na conta do usuario
 
+function edita_meu_usuario( int $id, string $nome, string $CPF, string $dtNasc, string $sexo, 
+							string $email, string $senha, string $endereco, string $telefone): bool {
+	global $db;
+
+	$senha = password_hash( $senha, PASSWORD_DEFAULT);
+
+	$stmt = $db->prepare('	UPDATE 
+								usuario 
+							SET 
+								Nome = :nm, CPF = :CPF, DataNascimento = :dtNasc, Sexo = :sexo, Email = :email, Senha = :senha, Endereco = :ende, Telefone = :tell
+							WHERE
+								ID = :id');
+
+	$stmt->bindParam(':id', 	$id);
+	$stmt->bindParam(':nm', 	$nome);
+	$stmt->bindParam(':CPF', 	$CPF);
+	$stmt->bindParam(':dtNasc', $dtNasc);
+	$stmt->bindParam(':sexo', 	$sexo);
+	$stmt->bindParam(':email', 	$email);
+	$stmt->bindParam(':senha', 	$senha);
+	$stmt->bindParam(':ende', 	$endereco);
+	$stmt->bindParam(':tell', 	$telefone);
+
+
+	return $stmt->execute();
+}
+
+function lista_meus_dados( int $id=null ): array//colocar int $id=null diz que esse parametro é opcional
+{
+
+global $db;//posso acessar $db aqui dentro
+
+if( is_null($id) ){
+
+	$str = '';
+
+	//SQL se $id não for passado como parametro:
+	//SELECT id, nome, email FROM usuario"
+
+}else{
+
+//caso o usu passe um param para listarTudo()
+//Na consulta SQL será adiocionada a cláusula WHERE
+//Ainda, p preg_replace() garante que não haverá SQL injection
+$str = 'WHERE id = ' .preg_replace('/\D/','',$id);
+
+	//SQL se $id não for passado como parametro:
+	//SELECT id, nome, email FROM usuario WHERE id = N"
+
+}
+
+$r = $db->query("SELECT ID, Nome, CPF, DataNascimento, Sexo, Email, Endereco, Telefone FROM usuario $str ORDER BY ID");
+$reg = $r->fetchAll();
+
+return is_array($reg) ? $reg : [];//verifica se $reg está como array. se não ele transforma em um
+}
