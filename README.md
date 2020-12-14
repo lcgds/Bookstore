@@ -3,8 +3,11 @@ Projeto Integrador 2 - Tecnologia em Sistemas para Internet
 
 Integrantes: 
 Luiz Carlos Garrido de Souza
+
 Maria Luiza Sayuri Hioki
+
 Renan Augusto da Silva
+
 Kelvin do Nascimento Costa
 
 Sobre o projeto:
@@ -16,6 +19,8 @@ Funcionalidades:
 
 Para o usuário comum:
 Cadastrar-se, fazer login e acessar sua conta e editar seus dados, também enviar mensagem ou entrar em contato com a biblioteca por telefone(pelo numero de telefone exposto no site) e tela para navegar nos livros e tela informativa sobre a livraria.
+
 Para um usuário administrador:
+
 Além das funções de um usário comum, listagem, alteração e deleção de todas as contas cadastradas.
 Obs. funcionalidades no usuário comum como editar seus dados não finalizada.
